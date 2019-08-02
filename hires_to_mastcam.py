@@ -33,8 +33,8 @@ import os
 
 #READ IN THE HIGH-RESOLUTION SPECTRA AND WAVELENGTHS
 microns=False
-input_file='/home/khoza/Spectroscopy/data/003_4weathered_full_sweep_corrected.csv'
-os.chdir('/home/khoza/Python/mastcam_convolve')
+input_file='Z:\Kristiana\Spectra\MCZ_targets\Full_redo_run\spectra\full_run.csv'
+os.chdir('C:\Users\krist\OneDrive\Documents\Python\mastcam_convolve\MCZ_probe')
 input_data=np.genfromtxt(input_file, dtype=float, delimiter=',',skip_header=5, unpack=True)
 spectrum_wav=np.array(input_data[0])
 
